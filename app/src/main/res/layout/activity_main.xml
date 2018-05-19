@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dhs.i4u.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Main_Layout"
+        android:layout_width="380dp"
+        android:layout_height="523dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="43dp">
+
+        <Button
+            android:id="@+id/AddNumbtn"
+            android:layout_width="328dp"
+            android:layout_height="29dp"
+            android:background="#90CAF9"
+            android:text="Contacts"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <Button
+            android:id="@+id/Nearbybtn"
+            android:layout_width="328dp"
+            android:layout_height="86dp"
+            android:background="#0198E1"
+            android:text="       Nearby Locations" />
+
+        <Button
+            android:id="@+id/buttonlocation"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="328dp"
+            android:layout_height="261dp"
+            android:layout_weight="0.19"
+            android:background="#90CAF9"
+            android:text="Click to Find Location"
+            tools:layout_editor_absoluteX="-446dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+
+        <Button
+            android:id="@+id/voicebtn"
+            android:layout_width="328dp"
+            android:layout_height="122dp"
+            android:background="#0198E1"
+            android:text="Voice SMS"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

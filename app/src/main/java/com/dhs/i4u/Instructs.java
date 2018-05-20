@@ -19,61 +19,61 @@ public class Instructs extends AppCompatActivity {
 
         StringBuilder htmlFormattedText = new StringBuilder();
 
-        htmlFormattedText.append("<h1>Welcome to your new eyes app <BR/>KD Device</h1><BR/>");
+        htmlFormattedText.append("<h1>Welcome to your new eyes app <BR/>I4U</h1><BR/>");
 
-        htmlFormattedText.append("<p>Helping the Blind, this app will provide with features such as sending an SMS text of" );
-        htmlFormattedText.append(" your current location and nearby locations such as hospitals, restaurant, and gas stations.");
-        htmlFormattedText.append(" </p><p>To initially use the app, you will need to be assisted by a sighted person. Once you" );
+        htmlFormattedText.append("<p>I4U Helping the blind  is an app with many features to assist you in your day to day life." );
+        htmlFormattedText.append(" </p>To initially use the app, you will need to be assisted by a sighted person. Once you" );
         htmlFormattedText.append(" open the app our logo will appear, after that, a pop up will ask for accessing your ");
         htmlFormattedText.append("current location, only if you press yes will you be able to continue using the app. " );
-        htmlFormattedText.append("</p><p>Another popup that will show up, is during the process of choosing your contacts." );
-        htmlFormattedText.append(" </p><p>A popup will be shown asking if the app can retrieve contacts from your phone, and " );
-        htmlFormattedText.append("select yes to continue. </p><p>Then you can have your assistant tap the contact button, which" );
-        htmlFormattedText.append(" brings you to a screen with contacts listed, then you can choose certain people, to" );
-        htmlFormattedText.append( " share your location with through a text. </p><p>Then hit the save button on the top to save " );
-        htmlFormattedText.append("those contacts, and this step can be repeated multiple times, as long as you save the contacts." );
-        htmlFormattedText.append(" </p><p>To find your current location you tap anywhere on the main button, and it will be read aloud to you." );
-        htmlFormattedText.append(" </p><p>To send your current location to your saved contacts, tap the main button twice and " );
-        htmlFormattedText.append("after the message is sent that will be read to you." );
-        htmlFormattedText.append(" </p><p>To get your nearby locations, hit the long button on the top of the screen, which " );
-        htmlFormattedText.append("moves to a new screen with 3 buttons. The top button is for nearby hospitals, the middle" );
-        htmlFormattedText.append( " button is nearby gas stations and the bottom button is nearby restaurants. " );
-        htmlFormattedText.append( "</p><p>Once you click on of those buttons, five locations will be given, then you can choose" );
-        htmlFormattedText.append( " a location by clicking it then the route guidance will be spoken out to you. " );
-        htmlFormattedText.append( "</p><p>To replay these guidelines, hit the instruction button on the button of the main screen," );
-        htmlFormattedText.append( "as many times as needed.</p>");
+        htmlFormattedText.append("</p>Another popup that will show up, is during the process of choosing your contacts." );
+        htmlFormattedText.append(" </p>A popup will be shown asking if the app can retrieve contacts from your phone, and " );
+        htmlFormattedText.append("select yes to continue. </p>The first page that opens on the app consists of two buttons." );
+        htmlFormattedText.append("The first button takes up half of the page, and it is the Instructions button." );
+        htmlFormattedText.append( "</p This button reviews the overall setup of the app. " );
+        htmlFormattedText.append("The second half of the page there is a Skip button which skips to the next layout." );
+        htmlFormattedText.append("<p>The next layout has four buttons, the very first one is the Contacts, Nearby Locations,Current Location, and Voice SMS. " );
+        htmlFormattedText.append(" </p>The contacts buttons is an one time setup where you can select who who want to send your SMS’s too.");
+        htmlFormattedText.append("The Nearby Locations button will only work after you press the Current Location button." );
+        htmlFormattedText.append("</p>After you do so, the Nearby Location button will take you to a new layout with four options." );
+        htmlFormattedText.append("Which are Restaurants, Banks, Hospitals, and Grocery Stores." );
+        htmlFormattedText.append( "You can choose any option and this will open to a new layout with the corresponding places." );
+        htmlFormattedText.append( "</p>You can choose the exact location you would like to travel to, and when you do so google maps automatically opens  and is on walking mode so you can travel to you location.");
+        htmlFormattedText.append( "The Current Location button has two features. A single click will let you know where you are and a double click will send this current location to whoever you selsted previously in the contacts." );
+        htmlFormattedText.append( "</p>The Voice SMS button is a feature that takes what you speak and writes it out." );
+        htmlFormattedText.append( "</p>When you click on this button it will open to a new layout and you can speak what you want to say.");
+        htmlFormattedText.append("At the bottom of the new layout there is a Send SMS button.");
+        htmlFormattedText.append("Whatever you have spoken will be sent as a SMS to who ever you have selected previously in the contacts.");
+
 
         ((TextView)findViewById(R.id.textView2)).setText(Html.fromHtml(htmlFormattedText.toString()));
 
 
         SpeechUtil speechUtil = new SpeechUtil(getApplicationContext());
-        String textView2 = "Welcome to your new eyes app KD Device:";
+        String textView2 = "Welcome to your new eyes app I4U : Helping the Blind ";
 
         speechUtil.speak(textView2);
 
-        textView2 = " Helping the Blind, this app will provide with features such as sending an SMS text of" +
-                " your current location and nearby locations such as hospitals, restaurant, and gas stations.";
+        textView2 = " I4U Helping the blind  is an app with many" +
+                "features to assist you in your day to day life ";
         speechUtil.speak(textView2);
 
-        textView2 =       " To initially use the app, you will need to be assisted by a sighted person. Once you" +
-                " open the app our logo will appear, after that, a pop up will ask for accessing your " +
-                "current location, only if you press yes will you be able to continue using the app. " +
-                "Another popup that will show up, is during the process of choosing your contacts." +
-                " A popup will be shown asking if the app can retrieve contacts from your phone, and " +
-                "select yes to continue. Then you can have your assistant tap the contact button, which" +
-                " brings you to a screen with contacts listed, then you can choose certain people, to" +
-                " share your location with through a text. Then hit the save button on the top to save " +
-                "those contacts, and this step can be repeated multiple times, as long as you save the contacts." +
-                " To find your current location you tap anywhere on the main button, and it will be read aloud to you." +
-                " To send your current location to your saved contacts, tap the main button twice and " +
-                "after the message is sent that will be read to you." +
-                " To get your nearby locations, hit the long button on the top of the screen, which " +
-                "moves to a new screen with 3 buttons. The top button is for nearby hospitals, the middle" +
-                " button is nearby gas stations and the bottom button is nearby restaurants. " +
-                "Once you click on of those buttons, five locations will be given, then you can choose" +
-                " a location by clicking it then the route guidance will be spoken out to you. " +
-                "To replay these guidelines, hit the replay button on the button of the main screen," +
-                "as many times as needed.";
+        textView2 =       " The first page that opens on the app consists of two buttons." +
+                " The first button takes up half of the page, and it is the Instructions button." +
+                "This button reviews the overall setup of the app." +
+                "The second half of the page there is a Skip button which skips to the next layout." +
+                "The next layout has four buttons, the very first one is the Contacts, Nearby Locations,Current Location, and Voice SMS." +
+                "The contacts buttons is an one time setup where you can select who who want to send your SMS’s too." +
+                " The Nearby Locations button will only work after you press the Current Location button" +
+                " After you do so, the Nearby Location button will take you to a new layout with four options." +
+                "Which are Restaurants, Banks, Hospitals, and Grocery Stores." +
+                "You can choose any option and this will open to a new layout with the corresponding places." +
+                "You can choose the exact location you would like to travel to, and when you do so google maps automatically opens  and is on walking mode so you can travel to you location." +
+                "The Current Location button has two features." +
+                " A single click will let you know where you are and a double click will send this current location to whoever you selsted previously in the contacts." +
+                "The Voice SMS button is a feature that takes what you speak and writes it out." +
+                "When you click on this button it will open to a new layout and you can speak what you want to say." +
+                "At the bottom of the new layout there is a Send SMS button." +
+                " Whatever you have spoken will be sent as a SMS to who ever you have selected previously in the contacts. ";
         speechUtil.speak(textView2);
         // this code is for when the person clicks on the instruction button on the main activity xml
 
